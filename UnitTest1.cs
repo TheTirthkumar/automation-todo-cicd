@@ -42,9 +42,8 @@ namespace example
             // Launch browser
             await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
-                Headless = false,
-                Channel = "chrome",
-                Args = new[] { "--start-maximized" }
+                Headless = true,
+                
             });
  
             var context = await browser.NewContextAsync(new() { ViewportSize = ViewportSize.NoViewport });
