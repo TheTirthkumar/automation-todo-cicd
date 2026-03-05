@@ -1,6 +1,5 @@
 # Use official Playwright .NET image
-FROM mcr.microsoft.com/playwright/dotnet:v1.42.0-jammy
-
+FROM mcr.microsoft.com/playwright/dotnet:v1.58.0-jammy
 # Set working directory
 WORKDIR /app
 
@@ -15,3 +14,4 @@ RUN dotnet build
 
 # Run tests
 CMD ["dotnet", "test"]
+
